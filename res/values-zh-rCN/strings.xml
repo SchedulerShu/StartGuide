@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">开机向导</string>
+    <string name="action_settings">设置</string>
+    <string name="page0_title">语言设置</string>
+    <string name="page1_title">时间日期设置</string>
+    <string name="page2_title">WIFI设置</string>
+    <string name="page3_title">双卡设置</string>
+    <string name="page4_title">登录账号</string>
+    <string name="page5_title">完成</string>
+
+    <!-- 欢迎首页面 -->
+    <string name="start">开始</string>
+    <string name="welcome_to_use">欢迎使用takee T OS</string>
+    <string name="welcome_to_use_in_here">在这里，您将享受到最优质的移动服联网内容和服务</string>
+
+    <!-- 语言设置 -->
+    <string name="choose_language">选择语言</string>
+    <string name="language_chinese">中文（简体）</string>
+    <string name="language_fanti">中文（繁體）</string>
+    <string name="language_en">English</string>
+
+    <!-- 时间日期设置 -->
+    <string name="date_and_time_choose">日期和时间选择</string>
+    <string name="riqi">日期：</string>
+    <string name="shijian">时间：</string>
+    <string name="zidongshiyong">自动使用网络上的时间</string>
+    <string name="date1">2015-01-01</string>
+    <string name="date2">12：00</string>
+
+    <!-- WiFi -->
+    <string name="protect_by">通过%1$s进行保护</string>
+    <string name="no_protect">未受保护的网络</string>
+    <string name="signal_strength">信号强度</string>
+    <string name="security_level">安全性</string>
+    <string name="password">密码</string>
+    <string name="show_password">显示密码</string>
+    <string name="connect">连接</string>
+    <string name="disconnect">忘记</string>
+    <string name="cancel">取消</string>
+    <string name="conn_status">连接状态</string>
+    <string name="ip_address">IP地址</string>
+    <string name="connect_success">连接成功</string>
+    <string name="connect_faild">WiFi连接失败</string>
+    <string name="connected">已连接</string>
+    <string name="defult_pwd">takee2015</string>
+    <string name="defult_wifi_name">0000</string>
+    <string name="add_network">添加网络</string>
+    <string name="add_network_ssid">SSID</string>
+    <string name="security_none">无</string>
+    <string name="security_wep">WEP</string>
+    <string name="security_wpa_wpa2_psk">WPA/WPA2/PSK</string>
+    <string name="security_eap">802.1x EAP</string>
+    <string name="security_psk">WAPI PSK</string>
+    <string name="security_wapi">WAPI证书</string>
+    <string name="is_conncting">正在连接</string>
+    <string name="wifi_disable">WIFI已关闭</string>
+    <string name="wifi_disabling">WIFI正在关闭</string>
+    <string name="wifi_enabling">WIFI正在打开</string>
+    <string name="update_on_loosen">松开刷新</string>
+    <string name="update_on_pull">下拉刷新</string>
+    <string name="updating">正在刷新...</string>
+    <string name="last_update_time">上次更新: </string>
+    <string name="no_wifi_data">没有WiFi数据</string>
+
+    <!-- 准备就绪 -->
+    <string name="kaishitiyan">开始体验精彩的Takee P1</string>
+    <string name="zhunbeijiuxu">准备就绪</string>
+    <string name="large_text">Large Text</string>
+    <string name="ready_description">您已完成所有的基本设定，现在就可以使用您的平板了。您还可以通过启动器中的设置来修改这些设定。</string>
+
+</resources>

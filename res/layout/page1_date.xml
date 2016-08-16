@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/date_and_time_choose"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_content_size" />
+
+    <!-- 蓝线 -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/line_bg" />
+
+    <!-- 日期 -->
+
+    <LinearLayout
+        android:id="@+id/dateContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="@string/riqi"
+            android:textSize="@dimen/text_content_size" />
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="@string/date1"
+            android:textSize="@dimen/text_content_size" />
+    </LinearLayout>
+
+    <!-- 灰线 -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/line_bg" />
+
+    <!-- 时间 -->
+
+    <LinearLayout
+        android:id="@+id/timeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="@string/shijian"
+            android:textSize="@dimen/text_content_size" />
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="@string/date2"
+            android:textSize="@dimen/text_content_size" />
+    </LinearLayout>
+
+    <!-- 灰线 -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/line_bg" />
+
+    <!-- 自动使用网络上的时间 -->
+
+    <CheckBox
+        android:id="@+id/autoUserNetWorkDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="@string/zidongshiyong"
+        android:checked="false"
+        android:textColor="@android:color/holo_blue_light"
+        android:visibility="gone" />
+
+</LinearLayout>
