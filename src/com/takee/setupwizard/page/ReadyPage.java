@@ -1,6 +1,7 @@
 package com.takee.setupwizard.page;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -10,6 +11,8 @@ import com.takee.setupwizard.R;
 import com.takee.setupwizard.base.BasePage;
 
 public class ReadyPage extends BasePage {
+	
+	private final String TAG = "ReadyPage";
 	private View mView;
 	private Context mContext;
 
@@ -17,6 +20,7 @@ public class ReadyPage extends BasePage {
 		mContext = mainActivity;
 		mView = page5_ready;
 
+		Log.v(TAG, "ReadyPage enter");
 		((Button) mView.findViewById(R.id.done))
 				.setOnClickListener(new OnClickListener() {
 					@Override
@@ -32,7 +36,7 @@ public class ReadyPage extends BasePage {
 
 	@Override
 	public void onResume() {
-
+		Log.v(TAG, "onResume enter");
 	}
 
 	@Override

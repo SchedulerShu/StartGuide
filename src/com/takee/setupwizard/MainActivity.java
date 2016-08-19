@@ -96,22 +96,26 @@ public class MainActivity extends Activity {
 	/** 初始化滑动视图的集合 */
 	private void initViewPage() {
 		title = (TextView) findViewById(R.id.title);
-		title.setText(getResources().getString(R.string.page0_title));
+		title.setText(getResources().getString(R.string.page2_title));
 
 		viewList = new ArrayList<BasePage>();
 		LayoutInflater inflater = getLayoutInflater().from(this);
-		View page0_language = inflater.inflate(R.layout.page0_language, null);
-		View page1_data = inflater.inflate(R.layout.page1_date, null);
+		
+		//delete by chenminjiang
+		//View page0_language = inflater.inflate(R.layout.page0_language, null);
+		//View page1_data = inflater.inflate(R.layout.page1_date, null);
 		View page2_wifi = inflater.inflate(R.layout.page2_wifi, null);
 		View page5_ready = inflater.inflate(R.layout.page3_ready, null);
 
-		languagePage = new LanguagePage(this, page0_language);
-		datePage = new DatePage(this, page1_data);
+		//delete by chenminjiang
+		//languagePage = new LanguagePage(this, page0_language);
+		//datePage = new DatePage(this, page1_data);
 		wifiPage = new WifiPage(this, page2_wifi);
 		readyPage = new ReadyPage(this, page5_ready);
 
-		viewList.add(languagePage);
-		viewList.add(datePage);
+		//delete by chenminjiang
+		//viewList.add(languagePage);
+		//viewList.add(datePage);
 		viewList.add(wifiPage);
 		viewList.add(readyPage);
 
@@ -231,11 +235,11 @@ public class MainActivity extends Activity {
 				switch (arg0) {
 				case PAGE0_LANGUAGE:
 					title.setText(getResources()
-							.getString(R.string.page0_title));
+							.getString(R.string.page2_title));
 					break;
 				case PAGE1_DATA:
 					title.setText(getResources()
-							.getString(R.string.page1_title));
+							.getString(R.string.page5_title));
 					break;
 				case PAGE2_WIFI:
 					title.setText(getResources()

@@ -20,6 +20,20 @@ public class LaunchWizardLogic {
 	private final int SETUP_STATE_IS_RUNNING = 2;// 正在设置
 	private final int SETUP_STATE_NEED_TO_RESTART = 1;// 需要重新设置
 
+	 //add by chenminjiang
+	 private void finishSetupWizard(Context context) {
+	        // Add a persistent setting to allow other apps to know the device has been provisioned.
+	        Settings.Global.putInt(context.getContentResolver(), Settings.Global.DEVICE_PROVISIONED , 1);
+	        
+	        //Settings.Secure.putInt(context.getContentResolver(), Settings.Secure., 1);
+
+	        // remove this activity from the package manager.
+	        PackageManager pm = context.getPackageManager();
+	        ComponentName name = new ComponentName("com.takee.setupwizard", "com.takee.setupwizard.MainActivity");
+	        
+	        pm.setComponentEnabledSetting(name, PackageManager.COMPONENT_ENABLED_STATE_DISABLED, 0);
+	    }
+	
 	private void setWizardState(Context context, int state) {
 		if (!isFinish(context)) {
 			Settings.System.putInt(context.getContentResolver(), START_WIZARD,
@@ -45,6 +59,10 @@ public class LaunchWizardLogic {
 	}
 
 	public void setupWizardFinish(Context context) {
+		
+		//add by chenminjiang
+		finishSetupWizard(context);
+		
 		if (!isFinish(context)) {
 			setWizardState(context, SETUP_STATE_FINISH);
 			String packageName = "com.android.launcher3";

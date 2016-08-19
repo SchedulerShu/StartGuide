@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <resources>
-
     <string name="app_name">Boot Wizard</string>
     <string name="action_settings">Settings</string>
     <string name="page0_title">Language Settings</string>
@@ -9,18 +8,15 @@
     <string name="page3_title">SIM Settings</string>
     <string name="page4_title">Login account</string>
     <string name="page5_title">Done</string>
-
     <!-- 欢迎首页面 -->
     <string name="start">Start</string>
     <string name="welcome_to_use">Welcome to use Takee P1</string>
     <string name="welcome_to_use_in_here">In here, You will enjoy the best quality mobile Internet content and services</string>
-
     <!-- 语言设置 -->
     <string name="choose_language">Language Choose</string>
     <string name="language_chinese">中文（简体）</string>
     <string name="language_fanti">中文（繁體）</string>
     <string name="language_en">English</string>
-
     <!-- 时间日期设置 -->
     <string name="date_and_time_choose">Date and time choose</string>
     <string name="riqi">Date：</string>
@@ -28,7 +24,6 @@
     <string name="zidongshiyong">Automatically using the network time</string>
     <string name="date1">2015-01-01</string>
     <string name="date2">12：00</string>
-
     <!-- WiFi -->
     <string name="protect_by">Secured with %1$s</string>
     <string name="no_protect">Unprotected</string>
@@ -63,11 +58,9 @@
     <string name="updating">Updating...</string>
     <string name="last_update_time">Last refresh: </string>
     <string name="no_wifi_data">No WiFi data</string>
-
     <!-- 准备就绪 -->
-    <string name="kaishitiyan">Welcome to use Takee P1</string>
+    <string name="kaishitiyan">Welcome to use robot</string>
     <string name="zhunbeijiuxu">ready</string>
     <string name="large_text">Large Text</string>
-    <string name="ready_description">You have completed all the basic settings. Now,You can use your tablet.You can also through the Settings in the Launcher to change these settings.</string>
-
+    <string name="ready_description">You have completed all the basic settings. Now,You can use your robot.You can also through the Settings in the Launcher to change these settings.</string>
 </resources>
